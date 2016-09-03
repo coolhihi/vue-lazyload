@@ -39,7 +39,10 @@ Vue.use(VueLazyload, {
   preLoad: 1.3,
   error: 'dist/error.png',
   loading: 'dist/loading.gif',
-  try: 3 // default 1
+  try: 3, // default 1
+  scrollElement: document.getElementById('Container')
+  // or
+  // scrollElement: document.getElementsByClassName('scroll')
 })
 
 new Vue({
